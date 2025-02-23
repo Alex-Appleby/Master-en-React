@@ -1,0 +1,85 @@
+*{ /*selector universal*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ /*Selector de etiqueta (porque solo debe haber una que se llame body)*/
+    background: lightgray; /*Color de fondo*/
+    font-family: Arial, Helvetica, sans-serif; /*Fuentes de texto*/
+}
+
+#container{
+    width: 80%; /*Ancho del contenedor*/
+    margin: 0 auto; /*Centrar el contenedor*/
+    border: 1px solid black; /*Borde del contenedor*/
+}
+
+header{
+    background: red;
+    height: 70px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 70px; /*Centrar el texto verticalmente*/ 
+    /*La altura tiene que ser la misma que la del contenedor*/
+    color: white;
+    border-bottom: 2px dashed black;
+}
+
+nav{
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    /*Cuando se aplica float a un elemento, se alinea y se permite que otros elementos se coloquen a lado del mismo*/
+    float: left; /*Alinea los elementos a la izquierda*/
+    list-style: none; /*Quita los puntos de la lista*/
+    margin: 10px;
+    line-height: 30px; /*Centrar el texto verticalmente*/
+}
+
+.clearfix{
+    clear: both; /*El elemento al que se aplica, no debe permitir que los elementos flotantes se sitúen a su izquierda o a su derecha*/
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 400px;
+    background-color: green;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.article{
+    color: white;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+article h2{
+    font-size: 25px; /*Tamaño de la fuente*/
+}
+
+aside{
+    float: left;
+    min-height: 400px;
+    width: calc(20% - 20px);
+    background-color: orange;
+    padding-left: 10px; /*Añade margenes interiores*/
+    padding-right: 10px; /*Añade margenes interiores*/
+    padding-top: 30px; /*Añade margenes interiores*/
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
