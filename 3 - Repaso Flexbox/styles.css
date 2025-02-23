@@ -1,0 +1,62 @@
+body{
+    background-color: beige;
+}
+
+.flex-container{
+    display: flex; /*Define un contenedor flexible*/
+    background-color: #ccc;
+    margin : 20px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    flex-direction: row; /*Dirección en la que se colocan los elementos*/
+    flex-wrap: wrap; /*Elementos se colocan en varias lineas*/
+    flex-flow: row wrap; /*Combina flex-direction y flex-wrap*/
+    justify-content: space-around; /*Alinea en el eje X*/
+    align-items: center; /*Alinea en el eje Y TODOS los elementos (No permite alinear el espacio entre elementos verticalmente)*/
+    align-content: space-around; /*Espacio ENTRE elementos Verticalmente (Solo funciona cuando hay wrapping)*/
+}
+
+.caja{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace; /*Tipo de letra*/
+    font-weight: bold; /*Negrita*/
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+}
+
+.caja1, .caja2, .caja3{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caja1{
+    background-color: lightblue;
+    order: 3; /*Orden de aparición de las cajas (los elementos hijos)*/
+    flex-grow: 2; /*Prioridad de crecimiento (si hay espacio, hazlo más grande)*/
+}
+.caja2{
+    background-color: lightcyan;
+    order: 2; 
+    flex-grow: 4;
+    flex-basis: 50%; /*Ancho de la caja, es lo mismo que un width*/
+}
+.caja3{
+    background-color: lightyellow;
+    order: 1;
+}
+
+.flex-container div{
+    margin: 20px;
+}
