@@ -10,7 +10,7 @@ body{
     padding: 20px;
     border: 1px solid black;
     flex-direction: row; /*Dirección en la que se colocan los elementos*/
-    flex-wrap: wrap; /*Elementos se colocan en varias lineas*/
+    flex-wrap: wrap; /*Permite que los elementos se coloquen en varias lineas cuando ya no caben en una*/
     flex-flow: row wrap; /*Combina flex-direction y flex-wrap*/
     justify-content: space-around; /*Alinea en el eje X*/
     align-items: center; /*Alinea en el eje Y TODOS los elementos (No permite alinear el espacio entre elementos verticalmente)*/

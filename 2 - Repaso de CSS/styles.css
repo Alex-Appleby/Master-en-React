@@ -8,7 +8,7 @@ body{ /*Selector de etiqueta (porque solo debe haber una que se llame body)*/
     font-family: Arial, Helvetica, sans-serif; /*Fuentes de texto*/
 }
 
-#container{
+#container{ /*Selector de Id. Un Id solo puede pertenecer a un elemento*/
     width: 80%; /*Ancho del contenedor*/
     margin: 0 auto; /*Centrar el contenedor*/
     border: 1px solid black; /*Borde del contenedor*/
