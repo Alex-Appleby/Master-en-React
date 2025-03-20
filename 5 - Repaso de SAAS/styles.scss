@@ -1,0 +1,40 @@
+//Modularización o Partials
+@use "anidacion";
+
+// Variables
+$color-principal: #ccc;
+$color-letra: blue;
+
+body{
+    background-color: $color-principal;
+}
+
+h1, p{
+    color: $color-letra;
+}
+
+// Mixins
+// Los Mixins son como funciones que pueden recibir parámetros.
+
+@mixin caja_personalizada($fondo: #ccc, $color: $color-letra){
+    background-color: $fondo;
+    border: 4px solid black;
+    box-shadow: 0px 0px 2px black;
+    color: $color;
+    margin:20px;
+}
+
+.caja{
+    @include caja_personalizada();
+}
+
+.caja-secundaria{
+    @include caja_personalizada(gray, red);
+}
+
+
+// Operadores
+
+.caja, .caja-secundaria{
+    width: 400px + 100px; // De otra manera se hubiera tenido que usar la función calc() de CSS si no contaramos con SASS
+}

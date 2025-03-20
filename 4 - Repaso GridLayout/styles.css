@@ -14,7 +14,7 @@ h1{
 .grid-layout{
     display: grid; /*Hacer el contenedor de tipo grid*/
     grid-template-columns: 85% 15%; /*Indicar número y ancho de columnas*/ /*Auto para que la caja se ajuste a su contenido*/ /*fr para dividir el espacio restante en partes iguales*/
-    grid-template-rows: 80px 30px 325px 30px; /*Indicar la altura de las filas de filas*/
+    grid-template-rows: 80px 30px 325px 30px; /*Indicar la altura de las filas*/
     gap: 4px; /*Espacio entre cajas*/
     text-align: center;
 }
